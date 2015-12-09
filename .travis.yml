@@ -44,7 +44,8 @@ before_install:
     fi
 
 install:
-  - python setup.py install
+  - python setup.py sdist
+  - pip install dist/*.tar.gz
   - pip install nose flake8 hacking mock
 
 script:
