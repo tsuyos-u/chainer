@@ -39,9 +39,8 @@ before_install:
       python --version;
 
       brew install homebrew/science/hdf5;
-
-      pip install h5py;
     fi
+  - pip install -U setuptools
 
 install:
   - python setup.py sdist
